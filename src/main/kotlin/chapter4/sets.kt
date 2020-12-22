@@ -1,10 +1,13 @@
 package chapter4
 
+/* Sets são coleções de elementos únicos
+* Tal coleção remove os elementos duplicados de forma automática */
+
 fun main() {
     val threes = setOf(3, 3, 3, 3)
     println(threes)
-    println("size = ${threes.size}")
-    println("has a 4? ${threes.contains(4)}")
+    println("size = ${threes.size}") // 1 (elemento exclusivo)
+    println("has a 4? ${threes.contains(4)}") // false
 
     println()
     val fset = mutableSetOf(1, 2, 3, 4, 5)

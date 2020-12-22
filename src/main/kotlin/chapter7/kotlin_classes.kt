@@ -1,12 +1,22 @@
 package chapter7._07_01.end
 
+/* CLASSES EM KOTLIN
+1) Em Kotlin, somente se especifica o modificador de visibilidade
+se o mesmo não for público
+
+2) Usa-se o construtor para inserir dados do mundo real dentro da classe
+
+3) Na maioria dos casos A keyword 'constructor não é obrigatório
+* */
+
 class PlainShort {}
 
-class ShortClass
+class ShortClass // -> classe inútil
 
+// 3)
 class WithConstructor constructor(name: String, age: Int) {}
+class WithoutConstructor (name: String, age: Int) {} // sem keyword -> shortcut
 
-class WithoutConstructor (name: String, age: Int) {}
 
 class MandatoryConstructor internal constructor(name: String, age: Int) {}
 
@@ -36,5 +46,5 @@ fun main() {
     val course = Course("Kotlin Essential Training")
     course.description = "secrets you want to know"
     course.show()
-    println(course)
+    println(course.description)
 }

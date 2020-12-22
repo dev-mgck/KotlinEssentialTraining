@@ -9,6 +9,12 @@ package chapter3
 * contants, variables, operators, and functions that the programming
 * language interprets... and computers to produce... another value.*/
 
+// Não há operador ternário em Kotlin porque 'if' é uma expressão
+
+/* o sinal '=' (atribuição) representa um declaração, e não uma expressão.
+ Por isso, não é possível em uma simples declaração atribuir valores a
+ variáveis multiplas */
+
 fun returnsNothing() {
     println("returnsNothing() function")
 }
@@ -31,6 +37,7 @@ fun main() {
 
     val fromNothing = returnsNothing();
     println("$fromNothing")
+
 
     var a = 100
     var b = 101

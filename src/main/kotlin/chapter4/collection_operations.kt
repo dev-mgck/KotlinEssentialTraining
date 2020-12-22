@@ -1,5 +1,16 @@
 package chapter4
 
+/* OPERADORES DE COLEÇÃO
+* Transformations
+* Filtering
+* Ordering
+* Retrieving an element
+* Retrieving an collection
+* Grouping
+* Aggregation
+* Plus and minus operations
+* */
+
 fun main() {
     val list = listOf(1, 2, 3, 4, 5, 5, 6, 7, 7, 8)
     val set = setOf(10, 20, 30, 40, 50)

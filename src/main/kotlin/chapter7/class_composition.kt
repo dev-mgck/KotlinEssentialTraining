@@ -24,7 +24,7 @@ class Worker(override val jobTitle: String) : IWorker {
 }
 
 class Being(override val firstName: String) : IBeing {
-    override fun getName(): kotlin.String {
+    override fun getName(): String {
         return firstName
     }
 }

@@ -1,7 +1,7 @@
 package chapter3
 
 fun main() {
-    var cardPoints = 5499
+    var cardPoints = 5_499
 
     val cardLevel: String = when(cardPoints) {
         in 0..999 -> "pearl"

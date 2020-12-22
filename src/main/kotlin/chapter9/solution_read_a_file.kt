@@ -14,6 +14,6 @@ fun reader() = runBlocking{
 }
 
 fun readFile(fileName: String): List<String> {
-    val file = File("./resources/$fileName")
+    val file = File("./src/main/resources/$fileName")
     return file.readLines()
 }

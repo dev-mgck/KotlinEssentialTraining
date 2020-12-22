@@ -22,6 +22,20 @@ package chapter7._07_03.end
 //    }
 //}
 
+/* DATA CLASS
+As data classes são utilizadas para representar dados de uma forma
+estruturada, porém sem a necessidade de se definir getters, setters, toString,
+equals ou hashCode; todos esse código repetitivo é gerado automaticamente pelo compilador.
+
+O acesso direto à propriedade permitido pela linguagem Kotlin também
+torna a sintaxe muito mais clara
+
+É válido lembrar que ambas funções, funcionam apenas para properties do construtor primário
+, ou seja, as demais properties da classe, como por exemplo no corpo
+da mesma, não serão consideradas.
+
+*/
+
 data class Student(val firstName: String, val lastName: String, val grade: Int)
 
 fun main() {
@@ -39,5 +53,9 @@ fun main() {
     println()
     for(student in students){
         println(student)
+    }
+
+    for(i in 0 until students.size){
+        println(students[i])
     }
 }

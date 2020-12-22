@@ -1,5 +1,7 @@
 package chapter3
 
+// Somente dados nullables podem carregar tipos null
+
 data class Person(var firstName: String, var lastName: String)
 
 fun main() {

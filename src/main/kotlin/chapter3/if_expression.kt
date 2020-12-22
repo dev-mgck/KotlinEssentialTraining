@@ -26,7 +26,7 @@ fun main() {
     }
     println("bucket = $bucket")
 
-    val isGreater = if (number > 100) true else false
+    val isGreater = if (number > 100) true else false // redundante
     val isGreater2 = number > 100
 
     println("Is $number greater than 100? $isGreater2")

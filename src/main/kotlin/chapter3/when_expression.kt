@@ -2,19 +2,18 @@ package chapter3
 
 
 enum class Suit {
-    Club, Diamond, Heart, Spade
+    Club, Diamond, Heart, Spade;
 }
 
 fun main() {
-    val x = 1
-    when(x) {
+
+    when(1) {
         1 -> println("x == 1")
         2 -> println("x == 2")
         3,4 -> println("x == 3 or 4")
     }
 
-    val card = Suit.Spade
-    val y = when(card) {
+    when(Suit.Spade) {
         Suit.Club, Suit.Spade -> println("black card")
         Suit.Diamond, Suit.Heart -> println("red card")
     }
@@ -30,7 +29,8 @@ fun main() {
     }
     println("$name $lastName")
 
-    val ageType = when (x) {
+    val age = 18
+    val ageType = when (age) {
         in 0..1 -> "baby"
         in 2..4 -> "toddler"
         in 5..12 -> "kid"

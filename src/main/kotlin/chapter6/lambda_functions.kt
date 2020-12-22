@@ -8,6 +8,7 @@ fun main() {
     println("5 * 10 = ${l(5, 10)}")
     println("10 * 50 = ${l.invoke(10, 50)}")
 
+
     val num = listOf(1, 5, 7, 9, 10, 13)
     println(num.filter { it < 7})
 

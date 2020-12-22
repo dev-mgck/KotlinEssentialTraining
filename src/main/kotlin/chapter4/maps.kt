@@ -1,5 +1,7 @@
 package chapter4
 
+/* Mapas são coleções de pares com valores chaves únicos*/
+
 fun main() {
     val m1 = mapOf(1 to "alpha", 2 to "beta", 3 to "gamma", 4 to "delta")
     val m2 = mapOf(4 to "delta", 3 to "gamma", 2 to "beta", 1 to "alpha")
@@ -19,7 +21,7 @@ fun main() {
         println(key)
     }
 
-    println("has ford? ${"ford" in cars}")
+    println("has ford? ${"ford" in cars.keys}")
     println("has 1908? ${1908 in cars.values}")
 
 }

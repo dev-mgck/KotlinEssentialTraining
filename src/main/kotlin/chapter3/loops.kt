@@ -1,20 +1,25 @@
 package chapter3
 
+// O loop padrão ao estilo da linguagem C não existe em Kotlin
+
 fun main() {
 //    c-style loop
 //    for (int i=0; i < 10; i++) {
 //        println("i = $i")
 //    }
 
+
     for (i in 1..10) {
         println("i = $i")
     }
+
 
     val students = listOf("Janet", "Daisy", "Veronica", "Fernanda")
     for (student in students) {
         println("Current student is $student")
     }
 
+    // withIntex() -> atribui um index padrão a coleção
     for ((index, student) in students.withIndex()) {
         println("Student #${index + 1} is $student")
     }

@@ -6,4 +6,6 @@ fun main() {
             "dog", "elephant", "fox", "goat", "elephant")
     val setAnimals = animals.toSet()
     println(setAnimals)
+    val listAnimals = setAnimals.toList().sortedDescending()
+    println(listAnimals)
 }
